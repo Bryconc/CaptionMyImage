@@ -14,7 +14,7 @@ if(isset($_POST['comment_text']) && isset($_POST['photo_id'])){
 }
 
 function connectToDB() {
-    $mysqllink = new mysqli("localhost", "carpenterba", "happypk", "carpenterba");
+    $mysqllink = new mysqli("localhost", "carpenterba", "XpnadT8bZ5pdKuXq", "carpenterba");
     
     if (mysqli_connect_errno()) {
         exit();

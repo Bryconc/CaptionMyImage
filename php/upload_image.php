@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 session_start();
 
 function connectToDB() {
-    $mysqllink = new mysqli("localhost", "carpenterba", "happypk", "carpenterba");
+    $mysqllink = new mysqli("localhost", "carpenterba", "XpnadT8bZ5pdKuXq", "carpenterba");
 
     if (mysqli_connect_errno()) {
         exit();
