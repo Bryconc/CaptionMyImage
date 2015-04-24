@@ -1,0 +1,122 @@
+body {
+    background:transparent;
+    border:0;
+    font-size:100%;
+    margin:0;
+    outline:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+header {
+    background-color:#4169BE;
+    color:#FFF;
+    height:100px;
+    position:relative;
+    width:100%;
+}
+
+header h1 {
+    font-size:3em;
+    left:50%;
+    margin-right:-50%;
+    margin-top:0;
+    position:absolute;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+header img {
+    position:absolute;
+}
+
+h2 {
+    font-size:2em;
+    text-align:center;
+}
+
+img.mainImage {
+    display:block;
+    height:375px;
+    margin-left:auto;
+    margin-right:auto;
+    width:500px;
+}
+
+div.centeredDiv {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+table {
+    border-spacing:10px;
+    margin:0 auto;
+}
+
+th {
+    font-size:1.5em;
+}
+
+header a {
+    color:inherit;
+}
+
+.largeButton {
+    background-color:#4169BE;
+    border:2px solid #FFF;
+    border-radius:20px;
+    color:#FFF;
+    display:inline-block;
+    font-size:2.25em;
+    font-weight:700;
+    height:75px;
+    text-decoration:none;
+}
+
+.smallButton {
+    background-color:#4169BE;
+    border:2px solid #FFF;
+    border-radius:20px;
+    color:#FFF;
+    display:inline-block;
+    font-size:1.5em;
+    font-weight:700;
+    height:40px;
+    text-decoration:none;
+}
+
+.largeButton:focus,.smallButton:focus {
+    outline:0;
+}
+
+.largeButton:hover,.smallButton:hover {
+    cursor:pointer;
+}
+
+#loginPanel a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+}
+
+#loginPanel:hover a{
+    color: #0C275E;
+}
+
+#loginPanel:hover {
+    background-color: white;
+    color: #0C275E;
+}
+
+#loginPanel {
+    background-color: #0C275E;
+    padding: 5px 10px;
+    display: inline-block;
+    text-align: center;
+    font-family:'Source Sans Pro', sans-serif;
+    border-bottom-right-radius: 10px;
+    color: black;
+}
+

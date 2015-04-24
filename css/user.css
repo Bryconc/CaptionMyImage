@@ -1,0 +1,109 @@
+/* 
+    Created on : Nov 9, 2014, 8:46:50 PM
+    Author     : Brycon
+*/
+div#userMain {
+    background-color: #0C275E;
+    width: 750px;
+    height: 250px;
+}
+
+img#userPicture {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+div#userInfo {
+    display: inline-block;
+    position: relative;
+    width: 450px;
+    top: -110px;
+    left: 40px;
+}
+
+span#userInfoName {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+span#userInfoLogin {
+    display: block;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+    color: #999;
+    font-size: 1.1em;
+}
+
+div#userNav {
+    display: block;
+    width: 750px;
+    height: 50px;
+    border-top: 1px solid #333;
+    background-color: #EBEBEB;
+}
+
+.navBarList {
+    position: relative;
+    left: 40px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navBarItem {
+    display: inline;
+    float: left;
+    height: 50px;
+    border-left: 1px solid #CECECE;
+    border-right: 1px solid #CECECE;
+    border-bottom: none;
+    
+}
+
+.navBarItem:focus {
+    outline: none;
+}
+
+.navBarItem:active {
+    font-size: .85em;
+}
+
+#userContent {
+    display: block;
+    width: 750px;
+    box-shadow: 0 2px .5em black;
+    padding-bottom: 30px;
+}
+
+.active {
+    border-bottom: 1px solid red;
+}
+
+#commentsTable, #ratingsTable {
+    border-collapse: collapse;
+    width: 550px;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+
+#commentsTable td, #ratingsTable td {
+    padding: 20px 10px;
+    border-bottom: 1px black solid;
+}
+
+#commentsTable a, #ratingsTable a {
+    text-decoration: none;
+    color: black;
+}
+
+.postingInfo {
+    float: right;
+}
+

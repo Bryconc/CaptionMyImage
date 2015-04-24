@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script src="../js/jquery-2.1.1.min.js"></script>
+        <script src="../js/utility.js"></script>
+        <script src="../js/user.js"></script>
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/user.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="loginPanel"></div>
+            <a href="../"><h1>CaptionMyImage<img src="../images/camera.png" alt="Camera icon" height="40" width="40"></h1></a>
+        </header>
+
+        <div id="userMain" class="centeredDiv">
+            <img id="userPicture" src="../images/Blank.jpg" alt="User-selected profile picture">
+            <div id="userInfo">
+                <span id="userInfoName"></span>
+                <span id="userInfoLogin"></span>
+            </div>
+        </div>
+        <div id="userNav" class="centeredDiv">
+            <ul class="navBarList">
+                <li><button class="navBarItem" id="barImages">Images</button></li>
+                <li><button class="navBarItem" id="barComments">Comments</button></li>
+                <li><button class="navBarItem" id="barRatings">Ratings</button></li>
+            </ul>
+        </div>
+        <div id="userContent" class="centeredDiv"></div>
+
+    </body>
+</html>

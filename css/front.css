@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 9, 2014, 8:47:56 PM
+    Author     : Brycon
+*/
+
+div#recentComment {
+    background-color:#0093C6;
+    border:4px #EEE solid;
+    border-right:none;
+    border-top:none;
+    padding:10px;
+    position:absolute;
+    right:0;
+    top:0;
+    width:20%;
+}
+
+div#recentComment .commentText {
+    text-decoration: none;
+    color: black;
+}
+
+div#recentComment hr {
+    left:0;
+    width:100%;
+}
+
+div#recentImages table {
+    empty-cells:show;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div#recentImages .emptyCell {
+    height:200px;
+    width:200px;
+}
+
+div#pageSelector a,div#pageSelector span {
+    background-color:#0093C6;
+    border-radius:50%;
+    color:#FFF;
+    display:inline-block;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size:40px;
+    height:50px;
+    text-align:center;
+    text-decoration:none;
+    width:50px;
+}
+
+div#pageSelector {
+    margin-top:10px;
+    text-align:center;
+}
+
+div#pageSelector span {
+    background-color:#4169BE;
+    color:#000;
+}
+
+.buttonWrapper {
+    margin-top:20px;
+    text-align:center;
+}

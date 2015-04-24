@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 8, 2014, 8:36:41 PM
+    Author     : Brycon
+*/
+
+form {
+    border: 1px solid #0C275E;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.successMessage {
+    color: green;
+}
+
+tr:empty {
+    visibility: hidden;
+}
+
+td:empty {
+    visibility: hidden;
+}
+
+

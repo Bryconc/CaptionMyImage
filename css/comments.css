@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 8, 2014, 7:48:17 PM
+    Author     : Brycon
+*/
+
+
+#commentSubmission {
+    height:100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    position:relative;
+    width:500px;
+}
+
+#commentSubmission .smallButton {
+    bottom:0;
+    position:absolute;
+    right:0;
+}
+
+#commentContainer {
+    margin-top:20px;
+}
+
+#commentContainer .comment:first-child {
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+#commentContainer .comment:last-child {
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.comment:nth-child(even) {
+    background-color:#d8d8d8;
+}
+
+.comment {
+    position: relative;
+    display: block;    
+    background-color:#89867b;
+    height:50px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+    width:480px;
+}
+
+.commentInfo {
+    display: block;
+    font-size:.75em;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+textarea {
+    display:block;
+    height:50px;
+    resize:none;
+    width:495px;
+}
+
+.commentRating {
+    display: block;
+    float: right;
+    margin-top: -10px;
+    //margin-left: 380px;
+}
+
+.rateUpButton:hover, .rateDownButton:hover {
+    cursor: pointer;
+}
