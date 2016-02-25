@@ -7,7 +7,7 @@ logout();
 function logout() {
     unset($_SESSION["username"]);
     unset($_SESSION["user_id"]);
-    header('Location: http://student.cs.appstate.edu/carpenterba/CS3440/project/');
+    header('Location: http://student.cs.appstate.edu/carpenterba/CaptionMyImage/');
     die();
 }
 

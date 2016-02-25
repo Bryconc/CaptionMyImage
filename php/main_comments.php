@@ -6,7 +6,7 @@ $mysqllink = connectToDB();
 getPageData();
 
 function connectToDB() {
-    $mysqllink = new mysqli("localhost", "carpenterba", "XpnadT8bZ5pdKuXq", "carpenterba");
+    $mysqllink = new mysqli("localhost", "carpenterba", "[redacted]", "carpenterba");
     
     if (mysqli_connect_errno()) {
         exit();

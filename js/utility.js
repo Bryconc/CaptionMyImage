@@ -26,14 +26,14 @@ function showLoggedIn(data) {
     var loginBar = document.createElement("A");
     var data = data.split(" ");
     loginBar.innerHTML = data[0];
-    loginBar.href = "/carpenterba/CS3440/project/people/user.html?id="+data[1];
+    loginBar.href = "/carpenterba/CaptionMyImage/php/people/user.html?id="+data[1];
     
     username = data[0];
     user_id = data[1];
 
     var loginMenuDiv = document.createElement("DIV");
     var loginMenuRegister = document.createElement("A");
-    loginMenuRegister.href = "/carpenterba/CS3440/project/php/logout.php";
+    loginMenuRegister.href = "/carpenterba/CaptionMyImage/php/logout.php";
     loginMenuRegister.innerHTML = "Sign Out";
     loginMenuDiv.id = "loginMenu";
     loginMenuDiv.appendChild(loginMenuRegister)
@@ -60,7 +60,7 @@ function showLoggedIn(data) {
 
 function checkForLogin() {
     $.ajax({
-        "url": "/carpenterba/CS3440/project/php/login_verify.php",
+        "url": "/carpenterba/CaptionMyImage/php/login_verify.php",
         "type": "POST",
         "success": function(data) {
             setLoginPanel(data);
@@ -69,7 +69,7 @@ function checkForLogin() {
 }
 
 function login(username, user_id) {
-    var posting = $.post("/carpenterba/CS3440/project/php/login.php", {
+    var posting = $.post("/carpenterba/CaptionMyImage/php/login.php", {
         'username': username,
         'user_id': user_id
     });
@@ -87,11 +87,11 @@ function createLogin() {
     var loginPanel = $("<div id='loginPanel'></div>");
     var loginBar = document.createElement("A");
     loginBar.innerHTML = "Sign In";
-    loginBar.href = "/carpenterba/CS3440/project/login/";
+    loginBar.href = "/carpenterba/CaptionMyImage/login/";
 
     var loginMenuDiv = document.createElement("DIV");
     var loginMenuRegister = document.createElement("A");
-    loginMenuRegister.href = "/carpenterba/CS3440/project/register/";
+    loginMenuRegister.href = "/carpenterba/CaptionMyImage/register/";
     loginMenuRegister.innerHTML = "Register";
     loginMenuDiv.id = "loginMenu";
     loginMenuDiv.appendChild(loginMenuRegister)
@@ -118,7 +118,7 @@ function createLogin() {
 
 function getSessionLogin() {
     $.ajax({
-        "url": "/carpenterba/CS3440/project/php/login_verify.php",
+        "url": "/carpenterba/CaptionMyImage/php/login_verify.php",
         "type": "POST",
         "success": function(data) {
             if(data == "") {

@@ -3,8 +3,8 @@ ini_set('display_errors',1);  error_reporting(E_ALL);
 
 $mysqllink = connectToDB();
 
-if(isset($_POST['user_id']) && isset($_POST['photo_id']) && isset($_POST['comment_id']) && isset($_POST['rate_value']) ){
-    rateUp($_POST['user_id'], $_POST['photo_id'], $_POST['comment_id'], $_POST['rate_value']);
+if(isset($_POST['user_id']) && isset($_POST['photo_id']) && isset($_POST['comment_id'])){
+    rateDown($_POST['user_id'], $_POST['photo_id'], $_POST['comment_id']);
 }
 
 function connectToDB() {
@@ -17,7 +17,7 @@ function connectToDB() {
     return $mysqllink;
 }
 
-function rateUp($user_id, $photo_id, $comment_id, $rate_value) {
+function rateDown($user_id, $photo_id, $comment_id) {
     $mysql_query = "SELECT * from rated_entity where user_id = $user_id AND comment_id = $comment_id";
     $query_result = $GLOBALS['mysqllink']->query($mysql_query);
    
@@ -26,7 +26,7 @@ function rateUp($user_id, $photo_id, $comment_id, $rate_value) {
         $query_result = $GLOBALS['mysqllink']->query($mysql_query);
     }
     
-    $mysql_query = "INSERT INTO rated_entity VALUES($user_id, $comment_id, $photo_id, NOW(), $rate_value)";
+    $mysql_query = "INSERT INTO rated_entity VALUES($user_id, $comment_id, $photo_id, NOW(), -1)";
     $query_result = $GLOBALS['mysqllink']->query($mysql_query);
     
     if($query_result){

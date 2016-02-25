@@ -3,12 +3,12 @@ ini_set('display_errors',1);  error_reporting(E_ALL);
 
 $mysqllink = connectToDB();
 
-if(isset($_POST['photo_id'])){
-    getPageData($_POST['photo_id']);
+if(isset($_POST['comment_id'])){
+    getPageData($_POST['comment_id']);
 }
 
 function connectToDB() {
-    $mysqllink = new mysqli("localhost", "carpenterba", "[redacted]", "carpenterba");
+    $mysqllink = new mysqli("localhost", "carpenterba", "happypk", "carpenterba");
     
     if (mysqli_connect_errno()) {
         exit();
@@ -18,12 +18,13 @@ function connectToDB() {
 }
 
 function getPageData($id) {
-    $mysql_query = "SELECT name, id from photo JOIN user WHERE uploaded_by = id AND photo_id = $id";
+    $mysql_query = "SELECT SUM(rate_value) as value from rated_entity WHERE comment_id = $id";
     $query_result = $GLOBALS['mysqllink']->query($mysql_query);
     
+    $return_info = "";
    
     if ($row = $query_result->fetch_object()) {
-        echo json_encode($row);
+        echo $row->value;
     }
     
 }
