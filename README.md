@@ -3,4 +3,4 @@ CaptionMyImage Website designed as a Client Side Web Project where I implement m
 
 Website can be viewed [here]
 
-[here]:http://student.cs.appstate.edu/carpenterba/CS3440/project/
+[here]:http://student.cs.appstate.edu/carpenterba/CaptionMyImage/
